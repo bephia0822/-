@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A47E4AEA262DD28900D1825C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4E3066E25320961002BC407 /* Info.plist */; };
+		A47E4AFA262DD64900D1825C /* Stay Wildy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A47E4AF9262DD64900D1825C /* Stay Wildy.ttf */; };
+		A47E4B05262DD81F00D1825C /* Lourena.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A47E4B04262DD81E00D1825C /* Lourena.ttf */; };
 		A4E3066125320959002BC407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3066025320959002BC407 /* AppDelegate.swift */; };
 		A4E3066325320959002BC407 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3066225320959002BC407 /* SceneDelegate.swift */; };
 		A4E3066525320959002BC407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3066425320959002BC407 /* ViewController.swift */; };
@@ -16,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A47E4AF9262DD64900D1825C /* Stay Wildy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Stay Wildy.ttf"; path = "../../../../../Library/Fonts/Stay Wildy.ttf"; sourceTree = "<group>"; };
+		A47E4B04262DD81E00D1825C /* Lourena.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Lourena.ttf; path = ../../../../../Library/Fonts/Lourena.ttf; sourceTree = "<group>"; };
 		A4E3065D25320959002BC407 /* 映画の選択.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "映画の選択.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E3066025320959002BC407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E3066225320959002BC407 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A45FB6D9262DC86200E2E992 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A47E4AF9262DD64900D1825C /* Stay Wildy.ttf */,
+				A47E4B04262DD81E00D1825C /* Lourena.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		A4E3065425320959002BC407 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +74,7 @@
 				A4E3066225320959002BC407 /* SceneDelegate.swift */,
 				A4E3066425320959002BC407 /* ViewController.swift */,
 				A4E3066625320959002BC407 /* Main.storyboard */,
+				A45FB6D9262DC86200E2E992 /* Font */,
 				A4E3066925320961002BC407 /* Assets.xcassets */,
 				A4E3066B25320961002BC407 /* LaunchScreen.storyboard */,
 				A4E3066E25320961002BC407 /* Info.plist */,
@@ -125,6 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E3066D25320961002BC407 /* LaunchScreen.storyboard in Resources */,
+				A47E4AEA262DD28900D1825C /* Info.plist in Resources */,
+				A47E4AFA262DD64900D1825C /* Stay Wildy.ttf in Resources */,
+				A47E4B05262DD81F00D1825C /* Lourena.ttf in Resources */,
 				A4E3066A25320961002BC407 /* Assets.xcassets in Resources */,
 				A4E3066825320959002BC407 /* Main.storyboard in Resources */,
 			);

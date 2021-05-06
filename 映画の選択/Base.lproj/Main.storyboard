@@ -1,24 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lourena.ttf">
+            <string>Lourena</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="映画の選択" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Great pretty wallpapers" translatesAutoresizingMaskIntoConstraints="NO" id="too-88-gxE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Dr8-8M-C24">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feG-S6-SyR" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="221.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WHAT TO WATCH TODAY?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qM-0J-DqN">
+                                                <rect key="frame" x="15" y="80" width="350" height="55"/>
+                                                <fontDescription key="fontDescription" name="Lourena" family="Lourena" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2qM-0J-DqN" firstAttribute="centerY" secondItem="feG-S6-SyR" secondAttribute="centerY" id="Gu1-xH-QhO"/>
+                                            <constraint firstItem="2qM-0J-DqN" firstAttribute="centerX" secondItem="feG-S6-SyR" secondAttribute="centerX" id="teP-ZU-fTV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yZ-QK-Ye0" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="vJ0-Vr-l3a" userLabel="movie view">
+                                                <rect key="frame" x="104.5" y="28" width="166.5" height="166.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vJ0-Vr-l3a" firstAttribute="centerX" secondItem="2yZ-QK-Ye0" secondAttribute="centerX" id="VoT-P6-J4Z"/>
+                                            <constraint firstItem="vJ0-Vr-l3a" firstAttribute="centerY" secondItem="2yZ-QK-Ye0" secondAttribute="centerY" id="wMf-TB-m6R"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSh-Ua-bnT" userLabel="button View">
+                                        <rect key="frame" x="0.0" y="445.5" width="375" height="221.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WVt-Mg-WEI">
+                                                <rect key="frame" x="103.5" y="27" width="168" height="167"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="168" id="Atc-j7-Cxx"/>
+                                                    <constraint firstAttribute="height" constant="167" id="uYx-Hd-hnd"/>
+                                                </constraints>
+                                                <state key="normal" image="Game_Start-removebg"/>
+                                                <connections>
+                                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wo8-F1-g0T"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="WVt-Mg-WEI" firstAttribute="centerY" secondItem="YSh-Ua-bnT" secondAttribute="centerY" id="hWV-UN-8y7"/>
+                                            <constraint firstItem="WVt-Mg-WEI" firstAttribute="centerX" secondItem="YSh-Ua-bnT" secondAttribute="centerX" id="iUR-ca-MFX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dr8-8M-C24" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2C1-go-22m"/>
+                            <constraint firstAttribute="bottom" secondItem="too-88-gxE" secondAttribute="bottom" id="A84-ZM-zRm"/>
+                            <constraint firstItem="too-88-gxE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jhi-h7-RbM"/>
+                            <constraint firstItem="Dr8-8M-C24" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ki0-ks-FUg"/>
+                            <constraint firstItem="too-88-gxE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M07-qZ-kb5"/>
+                            <constraint firstItem="Dr8-8M-C24" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xn4-rP-n8E"/>
+                            <constraint firstItem="Dr8-8M-C24" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fhd-Xq-rL3"/>
+                            <constraint firstItem="Dr8-8M-C24" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fnp-IW-r94"/>
+                            <constraint firstItem="Dr8-8M-C24" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gec-kD-WH8"/>
+                            <constraint firstItem="too-88-gxE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k6L-FT-CRT"/>
+                            <constraint firstItem="Dr8-8M-C24" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oGG-0p-V8I"/>
+                            <constraint firstItem="too-88-gxE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pLs-d5-OM2"/>
+                            <constraint firstItem="too-88-gxE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="sjb-j1-Z70"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movieView" destination="vJ0-Vr-l3a" id="zcx-TQ-0io"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="94.902548725637189"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Game_Start-removebg" width="166.5" height="166.5"/>
+        <image name="Great pretty wallpapers" width="360" height="640"/>
+        <image name="movie-removebg-preview" width="166.5" height="166.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

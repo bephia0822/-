@@ -62,5 +62,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Lourena.ttf</string>
+		<string>Stay Wildy.ttf</string>
+	</array>
 </dict>
 </plist>
